@@ -19,6 +19,6 @@ while (guessNumber !== randomNumber) {
     console.log("the number to guess is lower than the one you entered");
 } else  {
     
-   console.log( `AWSOME GOOD JOB YOU GUESSED AT THE ATTEMPT : "  ${attempt}  `)
+   console.log( `AWSOME GOOD JOB YOU GUESSED AT THE ATTEMPT :  ${attempt}  `)
 }
 }
