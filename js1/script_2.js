@@ -6,16 +6,15 @@
 //Una volta che ha indovinato, stampiamo in console il numero di tentativi totali.
 
 
-let randomNumber = Math.floor(Math.random()*100 + 1);
-console.log(randomNumber);
-let guessNumber;
+let randomNumber = Math.floor((Math.random()*100 )+ 1);
+let guessedNumber
 let attempt = 0;
-while (guessNumber !== randomNumber) {
-    guessNumber= parseInt( prompt("insert a number"));
+while (guessedNumber != randomNumber) {
+    let guessedNumber= parseInt( prompt("insert a number"));
     attempt++;
- if (guessNumber > randomNumber ) {
+ if (guessedNumber > randomNumber ) {
     console.log("the number to guess is higher than the one you entered");
-} else if ( guessNumber < randomNumber ) {
+} else if ( guessedNumber < randomNumber ) {
     console.log("the number to guess is lower than the one you entered");
 } else  {
     
