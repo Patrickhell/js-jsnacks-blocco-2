@@ -8,17 +8,21 @@
  * BONUS:
  * Se clicchiamo sul li il suo testo verrà sbarrato.
  */
+const ulElemnt = document.querySelector( "ul");
 
-function createLiElement () {
- const ulElemnt = document.querySelector( "ul");
- const liElment = document.createElement ("li")
- liElment.innerHTML = "<p> element </p>"
- ulElemnt.appendChild (liElment);
- 
+for (let x = 0; x < 10 ; x++) { 
+    liElment = document.createElement ("li")
+    liElment.innerHTML = "<p> element </p>"
+    ulElemnt.appendChild (liElment);
+    
+    
 }
 
 
-
-for (let x = 0; x <= 10 ; x++) { 
-    document.innerHTML =  createLiElement ();
+   
+   function createElement(tagName, className){
+    const cellElement = document.createElement(tagName);
+    cellElement.className = className;
+    return cellElement;
 }
+console.log(createElement(tagName, className));
